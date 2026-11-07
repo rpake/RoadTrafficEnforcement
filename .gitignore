@@ -1,0 +1,36 @@
+
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Native build outputs
+android/build/
+android/app/build/
+ios/build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local files
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+
+# Supabase local files
+supabase/.branches/
+supabase/.temp/

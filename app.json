@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Road Traffic Enforcement",
+    "slug": "road-traffic-enforcement",
+    "scheme": "roadtraffic",
+    "version": "1.1.0",
+    "orientation": "default",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow traffic officers to scan authorized codes and capture evidence."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow GPS location for traffic incident records."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow selection of incident evidence photographs."
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "android": {
+      "package": "pg.unitech.roadtrafficenforcement",
+      "permissions": [
+        "CAMERA",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "versionCode": 2
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
+
